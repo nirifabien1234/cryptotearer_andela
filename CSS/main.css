@@ -408,6 +408,61 @@ h2 {
     }
 }
 
+.circle5{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 10px;
+    stroke-dasharray: 250;
+    stroke-dashoffset: 250;
+    animation: animate5 2s linear forwards;  
+}
+@keyframes animate5{
+    100%{
+        stroke-dashoffset: 110;
+    }
+}
+
+.circle6{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 10px;
+    stroke-dasharray: 250;
+    stroke-dashoffset: 250;
+    animation: animate6 2s linear forwards;  
+}
+@keyframes animate6{
+    100%{
+        stroke-dashoffset: 80;
+    }
+}
+
+.circle7{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 10px;
+    stroke-dasharray: 250;
+    stroke-dashoffset: 250;
+    animation: animate7 2s linear forwards;  
+}
+@keyframes animate7{
+    100%{
+        stroke-dashoffset: 80;
+    }
+}
+.circle8{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 10px;
+    stroke-dasharray: 250;
+    stroke-dashoffset: 250;
+    animation: animate8 2s linear forwards;  
+}
+@keyframes animate8{
+    100%{
+        stroke-dashoffset: 80;
+    }
+}
+
 .for-skills{
     position: absolute;
     top: 0;
