@@ -3,7 +3,7 @@
 
 
 
-fetch('http://localhost:3000/api/posts').then(async data  =>  {
+fetch('https://api-v1-andela.herokuapp.com/api/posts').then(async data  =>  {
     return data.json();
 
     })
@@ -33,7 +33,7 @@ fetch('http://localhost:3000/api/posts').then(async data  =>  {
 
 
 // document.getElementById('delete').addEventListener('click', () => {
-//     fetch('http://localhost:3000/api/posts',)
+//     fetch('https://api-v1-andela.herokuapp.com/api/posts',)
 // })
 
 

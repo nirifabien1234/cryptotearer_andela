@@ -1,6 +1,6 @@
 document.querySelector('.leftcolumn_blog')
 const postCollection = []
-fetch('http://localhost:3000/api/posts').then(async data  =>  {
+fetch('https://api-v1-andela.herokuapp.com/api/posts').then(async data  =>  {
     return data.json();
 
     })

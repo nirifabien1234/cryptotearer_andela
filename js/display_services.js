@@ -1,7 +1,7 @@
 
 
 
-fetch('http://localhost:3000/api/services').then(async data  =>  {
+fetch('https://api-v1-andela.herokuapp.com/api/services').then(async data  =>  {
     return data.json();
 
     })

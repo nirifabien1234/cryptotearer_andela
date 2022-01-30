@@ -74,7 +74,7 @@ function checkInputs() {
     console.log(boddyValue)
     if(titleValue !== '' && boddyValue !== '' && image !== ''){
 
-        fetch('http://localhost:3000/api/services', {
+        fetch('https://api-v1-andela.herokuapp.com/api/services', {
             method: 'POST',
             body: new FormData(addPostForm)
             

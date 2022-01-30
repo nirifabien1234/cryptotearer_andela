@@ -1,5 +1,5 @@
 
-fetch('http://localhost:3000/api/projects')
+fetch('https://api-v1-andela.herokuapp.com/api/projects')
 
             // headers: {Cookie: `${token}` },
             .then(function (response) {
@@ -10,7 +10,7 @@ fetch('http://localhost:3000/api/projects')
             document.getElementById('count_projects').innerHTML += projects
         })
 
-fetch('http://localhost:3000/api/services')
+fetch('https://api-v1-andela.herokuapp.com/api/services')
     // method: 'POST',
     // body: new FormData(addPostForm)
     
@@ -25,7 +25,7 @@ fetch('http://localhost:3000/api/services')
     document.getElementById('count_services').innerHTML += services
 })
 
-fetch('http://localhost:3000/api/posts')
+fetch('https://api-v1-andela.herokuapp.com/api/posts')
     // method: 'POST',
     // body: new FormData(addPostForm)
     
@@ -41,7 +41,7 @@ fetch('http://localhost:3000/api/posts')
 })
 
 
-fetch('http://localhost:3000/api/messages').then(async data  =>  {
+fetch('https://api-v1-andela.herokuapp.com/api/messages').then(async data  =>  {
     return data.json();
 
     })

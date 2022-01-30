@@ -12,7 +12,7 @@ const smallTag2 = document.querySelector('#small2')
 const smallTag3 = document.querySelector('#small3')
 const smallTag4 = document.querySelector('#small4')
 const smallTag5 = document.querySelector('#small5')
-const url= "http://localhost:3000/api/messages/"
+const url= "https://api-v1-andela.herokuapp.com/api/messages/"
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -126,7 +126,7 @@ async function checkInputs() {
 }
 
 
-fetch('http://localhost:3000/api/projects').then(data  =>  {
+fetch('https://api-v1-andela.herokuapp.com/api/projects').then(data  =>  {
     return data.json();
 
     })
@@ -145,7 +145,7 @@ fetch('http://localhost:3000/api/projects').then(data  =>  {
 }});
 
 
-fetch('http://localhost:3000/api/services').then(data  =>  {
+fetch('https://api-v1-andela.herokuapp.com/api/services').then(data  =>  {
         return data.json();
     
         })

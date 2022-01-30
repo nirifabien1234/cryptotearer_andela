@@ -8,7 +8,7 @@ document.querySelector('.article_list').addEventListener('click', (list) =>{
         let id = list.target.parentElement.dataset.id
 
         if (delButtonPressed){
-            fetch(`http://localhost:3000/api/posts/${id}`, {
+            fetch(`https://api-v1-andela.herokuapp.com/api/posts/${id}`, {
                 method: 'DELETE',
             }).then(res => res.json())
             .then(() => location.reload())
@@ -16,7 +16,7 @@ document.querySelector('.article_list').addEventListener('click', (list) =>{
 
         if (editButtonPressed){
             
-            fetch(`http://localhost:3000/api/posts/${id}`, {
+            fetch(`https://api-v1-andela.herokuapp.com/api/posts/${id}`, {
                 method: 'GET',
             }).then(res => res.json())
             .then((data) =>{
@@ -29,7 +29,7 @@ document.querySelector('.article_list').addEventListener('click', (list) =>{
             
             
                 btnSubmit1.addEventListener('click', (e) =>{
-                fetch(`http://localhost:3000/api/posts/${id}`, {
+                fetch(`https://api-v1-andela.herokuapp.com/api/posts/${id}`, {
                     method: 'PATCH',
                     headers: {
                         'Content-Type': 'application/json'

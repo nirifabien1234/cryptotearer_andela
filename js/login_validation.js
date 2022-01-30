@@ -4,7 +4,7 @@ const passwordLogin = document.querySelector('#passwordLogin')
 const form = document.querySelector('#login-form')
 const smallTag6 = document.querySelector('#small6')//from login form
 const smallTag7 = document.querySelector('#small7')//from login form
-const url = "http://localhost:3000/api/user/login/"
+const url = "https://api-v1-andela.herokuapp.com/api/user/login/"
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();

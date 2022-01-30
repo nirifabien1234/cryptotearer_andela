@@ -2,7 +2,7 @@
 const token = localStorage.getItem("token")
 const postCollection = []
 console.log(token)
-fetch('http://localhost:3000/api/messages', {headers: {Cookie: `token ${token}` }}).then(async data  =>  {
+fetch('https://api-v1-andela.herokuapp.com/api/messages', {headers: {Cookie: `token ${token}` }}).then(async data  =>  {
     return data.json();
 
     })
